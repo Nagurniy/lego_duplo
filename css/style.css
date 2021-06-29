@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Yandex Sans';
+    src: local('Yandex Sans Text Regular'), local('Yandex-Sans-Text-Regular'),
+        url('../font/YandexSansText-Regular/YandexSansText-Regular.woff2') format('woff2'),
+        url('../font/YandexSansText-Regular/YandexSansText-Regular.woff') format('woff'),
+        url('../font/YandexSansText-Regular/YandexSansText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Global */
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Yandex Sans';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #686D71;
+  }
+
+  /* Banner */
+
+  .banner-lego {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1366px;
+      margin: 0;
+      padding: 0;
+      background-color: #ffff;
+  }
+
+  .banner-lego img {
+      max-width: 100%;
+      height: 100%;
+      margin: 0%;
+  }
+
+  .banner-lego-text {
+      margin: 60px 0 0 0;
+      padding-left: 40px;
+  }
+
+  .banner-lego-text h2 {
+      margin: 0;
+      margin-bottom: 45px;
+      text-transform: uppercase;
+      font-size: 38px;
+      line-height: 40px;
+  }
+
+  .banner-lego-text sup {
+      display: inline-block;
+      position: relative;
+      margin: 4px;
+      margin-right: 10px;
+      top: -8px;
+      font-size: 20px;
+  }
+  
+  .banner-lego-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0;
+      margin-right: 40px;
+      padding: 0;
+      line-height: 128%;
+  }
+
+  .banner-lego-item {
+      position: relative;
+      margin-bottom: 25px;
+      padding: 0;
+      padding-left: 26px;
+  }
+
+
+  .banner-lego-item::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      bottom: 3px;
+      left: 3px;
+      background-image: url(img/list-marker.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+  }
+
+
+  .banner-lego-item:last-child::before {
+    bottom: 30px;
+  }
+
+  /* Button */
+
+  .banner-lego-button {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      padding: 14px 24px 14px 24px;
+      color: black;
+      font-family: 'Yandex Sans';
+      font-size: 15px;
+      line-height: 20px;
+      background-color: #ffff;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+
+  .banner-lego-button:hover {
+      color: #FFD634;
+      border: 1px solid #FFD634;
+  }
+
+  .banner-lego-button:active {
+    color:#ffff;
+    border: 1px solid #ffff;
+    background-color: #FFD634;
+}
